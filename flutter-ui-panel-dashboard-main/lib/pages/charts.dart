@@ -103,7 +103,8 @@ class PieChart2State extends State {
             Expanded(
               child: AspectRatio(
                 aspectRatio: 1,
-                child: PieChart(
+                child:
+                PieChart(
                   PieChartData(
                       pieTouchData:
                           PieTouchData(touchCallback: (pieTouchResponse) {
@@ -262,7 +263,8 @@ class _LineChartSample2State extends State<LineChartSample2> {
         color: Constants.purpleLight,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         elevation: 3,
-        child: Stack(
+
+    child: Stack(
           children: <Widget>[
             AspectRatio(
               aspectRatio: 1,
@@ -281,9 +283,24 @@ class _LineChartSample2State extends State<LineChartSample2> {
                 ),
               ),
             ),
+          Padding( padding: const EdgeInsets.only(
+            left: Constants.kPadding * 2,
+            top: Constants.kPadding,
+            bottom: Constants.kPadding,
+            right: Constants.kPadding / 2),
+            child:
+            const Text(
+              'Monthly Sales',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2),
+              textAlign: TextAlign.center,
+            ),),
             SizedBox(
               width: 60,
-              height: 34,
+              height: 50,
               child: TextButton(
                 onPressed: () {
                   setState(() {
@@ -291,7 +308,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
                   });
                 },
                 child: Text(
-                  'avg',
+                  'Rands',
                   style: TextStyle(
                       fontSize: 12,
                       color: showAvg
@@ -567,8 +584,44 @@ class LineChartSample1State extends State<LineChartSample1> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
-                    height: 37,
-                  ),
+                    height: 5,
+                  ), Padding(
+          padding: const EdgeInsets.only(
+              top: Constants.kPadding,
+              left: Constants.kPadding *3,
+          bottom: Constants.kPadding *3),
+          child:
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const <Widget>[
+                      Indicator(
+                        color: Color(0xffff8811),
+                        text: 'Chocolate',
+                        isSquare: true,
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Indicator(
+                        color: Color(0xff9dd9c6),
+                        text: 'Vanilla',
+                        isSquare: true,
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Indicator(
+                        color: Color(0xfff4d06f),
+                        text: 'Coffee',
+                        isSquare: true,
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                    ],
+                  )),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.only(right: 16.0, left: 6.0),
@@ -825,9 +878,9 @@ class BarChartSample2 extends StatefulWidget {
 }
 
 class BarChartSample2State extends State<BarChartSample2> {
-  final Color leftBarColor = const Color(0xff53fdd7);
-  final Color rightBarColor = const Color(0xffff5182);
-  final double width = 7;
+  final Color barColor = const Color(0xff9dd9c6);
+  //final Color rightBarColor = const Color(0xffff5182);
+  final double width = 15;
 
   late List<BarChartGroupData> rawBarGroups;
   late List<BarChartGroupData> showingBarGroups;
@@ -837,13 +890,13 @@ class BarChartSample2State extends State<BarChartSample2> {
   @override
   void initState() {
     super.initState();
-    final barGroup1 = makeGroupData(0, 5, 12);
-    final barGroup2 = makeGroupData(1, 16, 12);
-    final barGroup3 = makeGroupData(2, 18, 5);
-    final barGroup4 = makeGroupData(3, 20, 16);
-    final barGroup5 = makeGroupData(4, 17, 6);
-    final barGroup6 = makeGroupData(5, 19, 1.5);
-    final barGroup7 = makeGroupData(6, 10, 1.5);
+    final barGroup1 = makeGroupData(0, 5);
+    final barGroup2 = makeGroupData(1, 16);
+    final barGroup3 = makeGroupData(2, 18);
+    final barGroup4 = makeGroupData(3, 20);
+    final barGroup5 = makeGroupData(4, 17);
+    final barGroup6 = makeGroupData(5, 19);
+    final barGroup7 = makeGroupData(6, 10);
 
     final items = [
       barGroup1,
@@ -899,29 +952,6 @@ class BarChartSample2State extends State<BarChartSample2> {
                           fontWeight: FontWeight.bold,
                           letterSpacing: 2),
                       textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Indicator(
-                      color: Color(0xff9dd9c6),
-                      text: '\tIncome',
-                      isSquare: true,
-                    ),
-                    SizedBox(
-                      height: 4,
-                    ),
-                    Indicator(
-                      color: Color(0xfff4d06f),
-                      text: '\tExpenses',
-                      isSquare: true,
-                    ),
-                    SizedBox(
-                      height: 4,
                     ),
                   ],
                 ),
@@ -1008,7 +1038,7 @@ class BarChartSample2State extends State<BarChartSample2> {
                                 case 5:
                                   return 'Vanilla';
                                 case 6:
-                                  return 'Strawberry';
+                                  return 'Coffee';
                                 default:
                                   return '';
                               }
@@ -1024,11 +1054,11 @@ class BarChartSample2State extends State<BarChartSample2> {
                             reservedSize: 14,
                             getTitles: (value) {
                               if (value == 0) {
-                                return '1K';
+                                return '1';
                               } else if (value == 10) {
-                                return '5K';
+                                return '5';
                               } else if (value == 19) {
-                                return '10K';
+                                return '10';
                               } else {
                                 return '';
                               }
@@ -1054,16 +1084,11 @@ class BarChartSample2State extends State<BarChartSample2> {
     );
   }
 
-  BarChartGroupData makeGroupData(int x, double y1, double y2) {
+  BarChartGroupData makeGroupData(int x, double y1) {
     return BarChartGroupData(barsSpace: 4, x: x, barRods: [
       BarChartRodData(
         y: y1,
-        colors: [leftBarColor],
-        width: width,
-      ),
-      BarChartRodData(
-        y: y2,
-        colors: [rightBarColor],
+        colors: [barColor],
         width: width,
       ),
     ]);
