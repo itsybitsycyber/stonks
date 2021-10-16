@@ -21,10 +21,10 @@ int _currentIndex = 0;
 
 List<ButtonsInfo> _buttonNames = [
   ButtonsInfo(title: "Home", icon: Icons.home),
-  ButtonsInfo(title: "Setting", icon: Icons.settings),
   ButtonsInfo(title: "Stocks", icon: Icons.inventory),
   ButtonsInfo(title: "Analytics", icon: Icons.insert_chart_outlined_rounded),
   ButtonsInfo(title: "Scan", icon: Icons.add_a_photo),
+  ButtonsInfo(title: "Setting", icon: Icons.settings),
 ];
 
 class DrawerPage extends StatefulWidget {
@@ -89,6 +89,13 @@ class _DrawerPageState extends State<DrawerPage> {
                           ),
                         ),
                         onTap: () {
+                          if(_buttonNames[index].title == 'Home') {
+                            Navigator.pushNamed(
+                                context, '/');
+                          } else {
+                            Navigator.pushNamed(
+                                context, '/' + _buttonNames[index].title);
+                          }
                           setState(() {
                             _currentIndex = index;
                           });

@@ -89,7 +89,8 @@ class PieChart2State extends State {
           left: Constants.kPadding / 2,
           bottom: Constants.kPadding,
           right: Constants.kPadding / 2),
-      child: Card(
+      child:
+      Card(
         color: Constants.purpleLight,
         elevation: 3,
         shape: RoundedRectangleBorder(
