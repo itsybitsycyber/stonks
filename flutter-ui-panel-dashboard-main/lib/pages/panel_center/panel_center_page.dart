@@ -39,26 +39,26 @@ class PanelCenterPage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: Container(
-                width: double.infinity,
-                child: ListTile(
-                  //leading: Icon(Icons.sell),
-                  title: Text(
-                    "Products Available",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  subtitle: Text(
-                    "82% of Products Avail.",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  trailing: Chip(
-                    label: Text(
-                      "20,500",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
-              ),
+              // child: Container(
+              //   width: double.infinity,
+              //   child: ListTile(
+              //     //leading: Icon(Icons.sell),
+              //     title: Text(
+              //       "Products Available",
+              //       style: TextStyle(color: Colors.white),
+              //     ),
+              //     subtitle: Text(
+              //       "82% of Products Avail.",
+              //       style: TextStyle(color: Colors.white),
+              //     ),
+              //     trailing: Chip(
+              //       label: Text(
+              //         "20,500",
+              //         style: TextStyle(color: Colors.white),
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ),
           ),
           BarChartSample2(),

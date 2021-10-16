@@ -88,7 +88,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
                           gradient: _currentSelectedButton == index
                               ? LinearGradient(
                                   colors: [
-                                    Constants.red,
+                                    Constants.yellow,
                                     Constants.orange,
                                   ],
                                 )
@@ -120,7 +120,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          Constants.red,
+                          Constants.yellow,
                           Constants.orange,
                         ],
                       ),
@@ -130,34 +130,6 @@ class _AppBarWidgetState extends State<AppBarWidget> {
               ),
             ),
           Spacer(),
-          IconButton(
-            color: Colors.white,
-            iconSize: 30,
-            onPressed: () {},
-            icon: Icon(Icons.search),
-          ),
-          Stack(
-            children: [
-              IconButton(
-                color: Colors.white,
-                iconSize: 30,
-                onPressed: () {},
-                icon: Icon(Icons.notifications_none_outlined),
-              ),
-              Positioned(
-                right: 6,
-                top: 6,
-                child: CircleAvatar(
-                  backgroundColor: Colors.pink,
-                  radius: 8,
-                  child: Text(
-                    "3",
-                    style: TextStyle(fontSize: 10, color: Colors.white),
-                  ),
-                ),
-              ),
-            ],
-          ),
           if (!ResponsiveLayout.isPhone(context))
             Container(
               margin: EdgeInsets.all(Constants.kPadding),

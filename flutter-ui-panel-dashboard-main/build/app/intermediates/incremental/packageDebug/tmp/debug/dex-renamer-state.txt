@@ -1,4 +1,4 @@
-#Sat Oct 16 13:21:56 SAST 2021
-base.0=/Users/laurenabrahall/StudioProjects/flutter-ui-panel-dashboard-main/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sat Oct 16 13:35:28 SAST 2021
+base.0=/Users/laurenabrahall/StudioProjects/stonks/flutter-ui-panel-dashboard-main/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

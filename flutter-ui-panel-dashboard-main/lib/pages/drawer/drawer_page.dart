@@ -44,7 +44,7 @@ class _DrawerPageState extends State<DrawerPage> {
             children: [
               ListTile(
                 title: Text(
-                  "Admin Menu",
+                  "Menu",
                   style: TextStyle(
                     color: Colors.white,
                   ),
@@ -68,7 +68,7 @@ class _DrawerPageState extends State<DrawerPage> {
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
                                 colors: [
-                                  Constants.red.withOpacity(0.9),
+                                  Constants.yellow.withOpacity(0.9),
                                   Constants.orange.withOpacity(0.9),
                                 ],
                               ),

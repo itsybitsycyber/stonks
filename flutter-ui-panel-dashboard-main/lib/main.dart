@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Admin Panel',
+      title: 'Stonks',
       theme: ThemeData(
           scaffoldBackgroundColor: Constants.purpleDark,
           primarySwatch: Colors.blue,
