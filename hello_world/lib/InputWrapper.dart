@@ -81,7 +81,7 @@ class InputWrapper extends StatelessWidget {
           Container(
             child: Center(
               child: ElevatedButton(
-                child: const Text("STOCKS",style: TextStyle(
+                child: const Text("INVENTORY",style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
                     fontWeight: FontWeight.bold
@@ -95,7 +95,7 @@ class InputWrapper extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   primary: const Color(0xff00bcd4),
-                  padding: const EdgeInsets.symmetric(horizontal: 61, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 49, vertical: 12),
                 ),
               ),
             ),

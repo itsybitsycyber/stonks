@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'Header.dart';
 import 'InputWrapper.dart';
 
-class LoginPage extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

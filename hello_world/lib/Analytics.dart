@@ -11,14 +11,11 @@ class Analytics extends StatelessWidget {
         title: Text("Analytics"),
         backgroundColor: Color(0xff00bcd4),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Navigate back to first route when tapped.
-          },
-          child: Text('Go back!'),
-        ),
-      ),
+      body: ListView(
+        children: [
+          Text("business is doing well.")
+        ],
+      )
     );
   }
 }
