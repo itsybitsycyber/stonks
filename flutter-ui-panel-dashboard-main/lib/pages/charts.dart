@@ -284,6 +284,8 @@ class _LineChartSample2State extends State<LineChartSample2> {
                 ),
               ),
             ),
+            SizedBox(
+                height: 60),
           Padding( padding: const EdgeInsets.only(
             left: Constants.kPadding * 2,
             top: Constants.kPadding,
@@ -296,7 +298,8 @@ class _LineChartSample2State extends State<LineChartSample2> {
                   color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  letterSpacing: 2),
+                  letterSpacing: 2,
+              ),
               textAlign: TextAlign.center,
             ),
 
