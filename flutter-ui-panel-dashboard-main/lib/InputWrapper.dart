@@ -72,13 +72,19 @@ class InputWrapper extends StatelessWidget {
           SizedBox(height: 40,),
           Container(
             child: Center(
-              child: ElevatedButton(
+              child: ElevatedButton.icon(
 
-                child: const Text("SCAN",style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold
+                icon: Icon(
+                  Icons.add_a_photo,
+                  color: Colors.white,
+                  size: 24.0,
                 ),
+                label: Text('Scan',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  ),
                 ),
 
                 onPressed: () {
@@ -89,7 +95,7 @@ class InputWrapper extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                     primary:  const  Color(0xff9dd9c6),
-                    padding: const EdgeInsets.symmetric(horizontal: 69, vertical: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 55, vertical: 18),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0)),
                 ),
@@ -99,12 +105,18 @@ class InputWrapper extends StatelessWidget {
           SizedBox(height: 40,),
           Container(
             child: Center(
-              child: ElevatedButton(
-                child: const Text("INVENTORY",style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold
+              child: ElevatedButton.icon(
+                icon: Icon(
+                  Icons.inventory,
+                  color: Colors.white,
+                  size: 24.0,
                 ),
+                label: Text('Inventory',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  ),
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -114,7 +126,7 @@ class InputWrapper extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   primary: const  Color(0xff9dd9c6),
-                  padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 18),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0)),
 
@@ -125,8 +137,14 @@ class InputWrapper extends StatelessWidget {
           SizedBox(height: 40,),
           Container(
             child: Center(
-              child: ElevatedButton(
-                child: const Text("ANALYTICS",style: TextStyle(
+              child: ElevatedButton.icon(
+                icon: Icon(
+                  Icons.insert_chart_outlined_rounded,
+                  color: Colors.white,
+                  size: 24.0,
+                ),
+                label: Text('Analytics',
+                style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold
@@ -138,11 +156,13 @@ class InputWrapper extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const Analytics()),
                   );*/
                 },
+
                 style: ElevatedButton.styleFrom(
                   primary:   const  Color(0xff9dd9c6),
-                  padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 18),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0)),
+
                 ),
               ),
             ),

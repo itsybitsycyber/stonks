@@ -68,8 +68,8 @@ class _DrawerPageState extends State<DrawerPage> {
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
                                 colors: [
-                                  const Color(0XFF1e224c),
-                                  Colors.white,
+                                  const  Color(0xff9dd9c6),
+                                  const  Color(0xff9dd9c6),
                                 ],
                               ),
                             )

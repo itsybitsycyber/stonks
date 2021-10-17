@@ -96,7 +96,17 @@ class PieChart2State extends State {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Row(
+        child: Column(
+            children: <Widget>[
+              SizedBox(height:10),
+              Text("Income Overview",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2,
+                ),
+                textAlign: TextAlign.center,), Row(
           children: <Widget>[
             const SizedBox(
               height: 18,
@@ -159,6 +169,8 @@ class PieChart2State extends State {
             ),
           ],
         ),
+        ],
+    ),
       ),
     );
   }
@@ -277,23 +289,21 @@ class _LineChartSample2State extends State<LineChartSample2> {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(
-                      right: 18.0, left: 12.0, top: 24, bottom: 12),
+                      right: 18.0, left: 12.0, top: 70, bottom: 12),
                   child: LineChart(
                     showAvg ? avgData() : mainData(),
                   ),
                 ),
               ),
             ),
-            SizedBox(
-                height: 60),
-          Padding( padding: const EdgeInsets.only(
+
+            Padding( padding: const EdgeInsets.only(
             left: Constants.kPadding * 2,
             top: Constants.kPadding,
             bottom: Constants.kPadding,
             right: Constants.kPadding / 2),
-            child:
-            const Text(
-              'Monthly Sales',
+            child: Text(
+              'Rolling Income Forecasts',
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
@@ -302,11 +312,10 @@ class _LineChartSample2State extends State<LineChartSample2> {
               ),
               textAlign: TextAlign.center,
             ),
-
           ),
-            SizedBox(
+              SizedBox(
               width: 60,
-              height: 50,
+              height: 120,
               child: TextButton(
                 onPressed: () {
                   setState(() {
@@ -564,13 +573,13 @@ class LineChartSample1State extends State<LineChartSample1> {
           child: Stack(
             children: <Widget>[
               Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   const SizedBox(
                     height: 37,
                   ),
                   const Text(
-                    'LaTeX on the Beach',
+                    'Panda Cakes',
                     style: TextStyle(
                       color: Color(0xff827daa),
                       fontSize: 16,
@@ -589,9 +598,7 @@ class LineChartSample1State extends State<LineChartSample1> {
                         letterSpacing: 2),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(
-                    height: 5,
-                  ), Padding(
+                  Padding(
           padding: const EdgeInsets.only(
               top: Constants.kPadding,
               left: Constants.kPadding *3,
