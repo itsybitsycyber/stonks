@@ -30,7 +30,7 @@ class InputWrapper extends StatelessWidget {
                       ),
                     ),
                   ), FloatingActionButton(
-                    backgroundColor:  const Color(0XFF1e224c),
+                    backgroundColor:  const Color(0xff9dd9c6),
                     foregroundColor: Colors.white,
                     onPressed: () {
                       // Respond to button press
@@ -58,7 +58,7 @@ class InputWrapper extends StatelessWidget {
                       ),
                     ),
                   ), FloatingActionButton(
-                    backgroundColor:  const Color(0XFF1e224c),
+                    backgroundColor:  const Color(0xff9dd9c6),
                     foregroundColor: Colors.white,
                     onPressed: () {
                       // Respond to button press
@@ -88,7 +88,7 @@ class InputWrapper extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                    primary:  const Color(0XFF1e224c),
+                    primary:  const  Color(0xff9dd9c6),
                     padding: const EdgeInsets.symmetric(horizontal: 69, vertical: 20),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0)),
@@ -113,7 +113,7 @@ class InputWrapper extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0XFF1e224c),
+                  primary: const  Color(0xff9dd9c6),
                   padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 20),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0)),
@@ -139,7 +139,7 @@ class InputWrapper extends StatelessWidget {
                   );*/
                 },
                 style: ElevatedButton.styleFrom(
-                  primary:   const Color(0XFF1e224c),
+                  primary:   const  Color(0xff9dd9c6),
                   padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 20),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(80.0)),

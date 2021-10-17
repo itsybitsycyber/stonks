@@ -32,12 +32,8 @@ class _Home extends State<Home> {
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-            Color(0xffffecb3),
-            Color(0xffffecb3),
-            //const Color(0xFF5C6BC0),
-             //Colors.white
-            //const Color(0xFF212121)
-            //const Color(0xFF303F9f)
+            Colors.white,
+            Colors.white
           ]),
         ),
         child: Column(
@@ -46,7 +42,7 @@ class _Home extends State<Home> {
             Header(),
             Expanded(child: Container(
               decoration: BoxDecoration(
-                  color: const Color(0xff26a69a),
+                  color: const Color(0XFF1e224c),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),

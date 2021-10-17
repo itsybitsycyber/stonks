@@ -45,7 +45,7 @@ class Scan extends StatelessWidget {
               );
             },
           ),
-          SizedBox(height: 30,),
+          SizedBox(height: 50,),
           Column(
             children: [ Center(
                 child:Text("Item Detected as: ", style: TextStyle(
@@ -55,14 +55,16 @@ class Scan extends StatelessWidget {
                 ),)
             ), SizedBox(height: 12,),
               Center(
-                child:Text("Chocolate Cupcake \t\t R20", style: TextStyle(
+                child:Text("Chocolate Cupcake        R20", style: TextStyle(
                     color: Colors.black,
-                    fontSize: 15,
+                    fontSize: 17,
                 ),)
             ),
               SizedBox(height: 15,),
               Row(
-                children: [              Container(
+                children: [
+                  SizedBox(width: 60),
+                  Container(
                   child: Center(
                     child: ElevatedButton(
                       child: const Text("SCAN AGAIN",style: TextStyle(
@@ -78,13 +80,15 @@ class Scan extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: const Color(0xff00bcd4),
-                        padding: const EdgeInsets.symmetric(horizontal: 37, vertical: 10),
+                        primary: const  Color(0xff9dd9c6),
+                        padding: const EdgeInsets.symmetric(horizontal: 37, vertical: 20),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(80.0)),
                       ),
                     ),
                   ),
                 ),
-                  SizedBox(width: 15,),
+                  SizedBox(width: 30),
                   Container(
                     child: Center(
                       child: ElevatedButton(
@@ -101,8 +105,10 @@ class Scan extends StatelessWidget {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: const Color(0xff00bcd4),
-                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                          primary: const  Color(0xff9dd9c6),
+                          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(80.0)),
                         ),
                       ),
                     ),

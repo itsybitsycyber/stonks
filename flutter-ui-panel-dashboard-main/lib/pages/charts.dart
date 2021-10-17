@@ -298,7 +298,9 @@ class _LineChartSample2State extends State<LineChartSample2> {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 2),
               textAlign: TextAlign.center,
-            ),),
+            ),
+
+          ),
             SizedBox(
               width: 60,
               height: 50,

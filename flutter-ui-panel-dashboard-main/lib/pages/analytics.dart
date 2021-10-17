@@ -55,7 +55,7 @@ class Analytics extends StatelessWidget {
                         ),
                         trailing: Chip(
                           label: Text(
-                            "4,500",
+                            "33",
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -83,7 +83,6 @@ class Analytics extends StatelessWidget {
                   textAlign: TextAlign.left,
                 ),
                 LineChartSample2(),
-                BarChartSample2(),
                 LineChartSample1(),
                 Padding(
                   padding: const EdgeInsets.only(

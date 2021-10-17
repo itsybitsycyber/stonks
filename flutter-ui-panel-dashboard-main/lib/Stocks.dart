@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:admin_panel_responsive_flutter/pages/drawer/drawer_page.dart';
-
+import 'package:admin_panel_responsive_flutter/pages/charts.dart';
 
 class Stocks extends StatelessWidget {
   const Stocks({Key? key}) : super(key: key);
@@ -13,12 +13,7 @@ class Stocks extends StatelessWidget {
         backgroundColor: const Color(0XFF1e224c),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Navigate back to first route when tapped.
-          },
-          child: Text('Go back!'),
-        ),
+        child: BarChartSample2(),
       ),
       drawer: DrawerPage(),
     );

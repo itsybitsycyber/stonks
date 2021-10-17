@@ -16,9 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Stonks',
       theme: ThemeData(
-          scaffoldBackgroundColor:const Color(0xff26a69a),
+          scaffoldBackgroundColor: const Color(0xffffffff),
           primarySwatch: Colors.blue,
           canvasColor: Constants.purpleLight),
+          //canvasColor: const Color(0xff303f9f)),
       home: Home(),
       routes: {
         '/Stocks': (context) => const Stocks(),
