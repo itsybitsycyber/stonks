@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../constants.dart';
 import 'charts.dart';
 import 'package:admin_panel_responsive_flutter/responsive_layout.dart';
+import 'package:admin_panel_responsive_flutter/pages/drawer/drawer_page.dart';
 
 class Analytics extends StatelessWidget {
   const Analytics({Key? key}) : super(key: key);
@@ -9,8 +10,9 @@ class Analytics extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Analytics')),
-      body: Stack(
+      appBar: AppBar(title: Text('Analytics'), backgroundColor: const Color(0XFF1e224c)),
+      body:
+      Stack(
         children: [
           if (ResponsiveLayout.isComputer(context))
             Container(
@@ -64,7 +66,7 @@ class Analytics extends StatelessWidget {
     Text(
     'Income/Expense Overview',
     style: TextStyle(
-    color: Colors.black,
+    color: Colors.white,
     fontSize: 20,
     fontWeight: FontWeight.bold,
     letterSpacing: 2),
@@ -74,7 +76,7 @@ class Analytics extends StatelessWidget {
                 Text(
                   'Monthly Sales',
                   style: TextStyle(
-                      color: Colors.indigo,
+                      color: Colors.white,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 2),
@@ -103,6 +105,7 @@ class Analytics extends StatelessWidget {
           ),
         ],
       ),
+      drawer: DrawerPage(),
     );
   }
 

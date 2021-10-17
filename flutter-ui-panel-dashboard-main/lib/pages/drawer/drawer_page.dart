@@ -21,9 +21,9 @@ int _currentIndex = 0;
 
 List<ButtonsInfo> _buttonNames = [
   ButtonsInfo(title: "Home", icon: Icons.home),
+  ButtonsInfo(title: "Scan", icon: Icons.add_a_photo),
   ButtonsInfo(title: "Stocks", icon: Icons.inventory),
   ButtonsInfo(title: "Analytics", icon: Icons.insert_chart_outlined_rounded),
-  ButtonsInfo(title: "Scan", icon: Icons.add_a_photo),
   ButtonsInfo(title: "Setting", icon: Icons.settings),
 ];
 
@@ -68,8 +68,8 @@ class _DrawerPageState extends State<DrawerPage> {
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
                                 colors: [
-                                  Constants.yellow.withOpacity(0.9),
-                                  Constants.orange.withOpacity(0.9),
+                                  const Color(0XFF1e224c),
+                                  Colors.white,
                                 ],
                               ),
                             )

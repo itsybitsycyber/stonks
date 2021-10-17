@@ -1,7 +1,9 @@
 import 'package:admin_panel_responsive_flutter/constants.dart';
-import 'package:admin_panel_responsive_flutter/widget_tree.dart';
+import 'package:admin_panel_responsive_flutter/Home.dart';
 import 'package:flutter/material.dart';
 import 'pages/analytics.dart';
+import 'package:admin_panel_responsive_flutter/Stocks.dart';
+import 'package:admin_panel_responsive_flutter/Scan.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,14 +16,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Stonks',
       theme: ThemeData(
-          scaffoldBackgroundColor: Constants.purpleDark,
+          scaffoldBackgroundColor:const Color(0xff26a69a),
           primarySwatch: Colors.blue,
           canvasColor: Constants.purpleLight),
-      home: WidgetTree(),
+      home: Home(),
       routes: {
-        '/Stocks': (context) => const FirstScreen(),
+        '/Stocks': (context) => const Stocks(),
         '/Analytics': (context) => const Analytics(),
-        '/Scan': (context) => const SecondScreen(),
+        '/Scan': (context) => const Scan(),
       },
     );
   }
