@@ -8,7 +8,8 @@ class Header extends StatelessWidget{
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Center(child:Image(image: AssetImage('stonks.png'), height: 150)),
+
+          Center(child:Image.asset('assets/stonks.png', height: 100)),
           SizedBox(height: 5,),
           /* Center(
             child: Text("STONKS", style: TextStyle(color: Colors.white, fontSize: 40),),

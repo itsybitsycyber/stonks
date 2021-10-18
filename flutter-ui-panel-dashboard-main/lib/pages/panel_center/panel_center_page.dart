@@ -7,23 +7,15 @@ import '../../constants.dart';
 class Person {
   String name;
   Color color;
-  Person({required this.name, required this.color});
+  Image image;
+  Person({required this.name, required this.color, required this.image});
 }
 
 class PanelCenterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Person> _persons = [
-      Person(name: "Theia Bowen", color: Color(0xfff8b250)),
-      Person(name: "Fariha Odling", color: Color(0xffff5182)),
-      Person(name: "Viola Willis", color: Color(0xff0293ee)),
-      Person(name: "Emmett Forrest", color: Color(0xfff8b250)),
-      Person(name: "Nick Jarvis", color: Color(0xff13d38e)),
-      Person(name: "ThAmit Clayeia", color: Color(0xfff8b250)),
-      Person(name: "ThAmalie Howardeia", color: Color(0xffff5182)),
-      Person(name: "Campbell Britton", color: Color(0xff0293ee)),
-      Person(name: "Haley Mellor", color: Color(0xffff5182)),
-      Person(name: "Harlen Higgins", color: Color(0xff13d38e)),
+      Person(name: "Theia Bowen", color: Color(0xfff8b250), image: Image.asset('assets/chocolate.png', height: 30)),
     ];
     return SingleChildScrollView(
       child: Column(

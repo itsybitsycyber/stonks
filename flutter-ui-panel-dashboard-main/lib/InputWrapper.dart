@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:admin_panel_responsive_flutter/Scan.dart';
 import 'package:admin_panel_responsive_flutter/Stocks.dart';
+import 'pages/analytics.dart';
+import 'Scan.dart';
+import 'Camera.dart';
+import 'globals.dart' as globals;
+import 'main.dart' as main;
+
 
 class InputWrapper extends StatelessWidget {
   @override
@@ -9,7 +15,7 @@ class InputWrapper extends StatelessWidget {
       padding: EdgeInsets.all(30),
       child: Column(
         children: <Widget>[
-          SizedBox(height: 40,),
+          SizedBox(height: 20,),
           Column(
             children: <Widget>[
               Row(
@@ -39,7 +45,7 @@ class InputWrapper extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 10,),
               Row(
                 children: <Widget>[
                   Expanded(
@@ -90,7 +96,10 @@ class InputWrapper extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Scan()),
+                    MaterialPageRoute(builder: (context) => TakePictureScreen(
+                      // Pass the appropriate camera to the TakePictureScreen widget.
+                      camera: globals.firstCamera,
+                    ),),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -102,7 +111,7 @@ class InputWrapper extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 20,),
           Container(
             child: Center(
               child: ElevatedButton.icon(
@@ -121,7 +130,7 @@ class InputWrapper extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Stocks()),
+                    MaterialPageRoute(builder: (context) => const main.Stocks()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -134,7 +143,7 @@ class InputWrapper extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 20,),
           Container(
             child: Center(
               child: ElevatedButton.icon(
@@ -151,10 +160,10 @@ class InputWrapper extends StatelessWidget {
                 ),
                 ),
                 onPressed: () {
-                 /* Navigator.push(
+                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const Analytics()),
-                  );*/
+                  );
                 },
 
                 style: ElevatedButton.styleFrom(

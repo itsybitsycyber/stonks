@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:admin_panel_responsive_flutter/Home.dart';
 
+import 'Home.dart';
+import 'globals.dart' as globals;
+import 'package:admin_panel_responsive_flutter/pages/drawer/drawer_page.dart';
+
 
 class Checkout extends StatelessWidget {
   const Checkout({Key? key}) : super(key: key);
@@ -9,9 +13,10 @@ class Checkout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stock"),
-        backgroundColor: Color(0xff00bcd4),
+        title: Text("Checkout"),
+        backgroundColor: const Color(0XFF1e224c),
       ),
+      drawer: DrawerPage(),
       body: Center(
         child: Column (
           children: [
@@ -22,23 +27,23 @@ class Checkout extends StatelessWidget {
                 fontWeight: FontWeight.bold
             ),),
             SizedBox(height: 20,),
-            Text("Chocolate Cupcake \t\t R20", style: TextStyle(
-              color: Colors.black,
-              fontSize: 15,
-            ),),
-            SizedBox(height: 10,),
-            Text("Strawberry Cupcake \t\t R20", style: TextStyle(
+            Text("Vanilla Cupcake \t\t R20", style: TextStyle(
               color: Colors.black,
               fontSize: 15,
             ),),
             SizedBox(height: 20,),
-            Text("Total Payment Due: \t\t\t R40", style: TextStyle(
+            Text("Panda Coffee Mug \t\t R30", style: TextStyle(
+              color: Colors.black,
+              fontSize: 15,
+            ),),
+            SizedBox(height: 20,),
+            Text("Total Payment Due: \t\t\t R50", style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
               fontSize: 15,
             ),),
             SizedBox(height: 20,),
-            Image.asset('assets/images/file.png', height: 350, width: 300),
+            Image.asset('assets/file.png', height: 300, width: 300),
             Container(
               child: Center(
                 child: ElevatedButton(
@@ -55,7 +60,7 @@ class Checkout extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: const Color(0xff00bcd4),
+                    primary: const Color(0xff9dd9c6),
                     padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                   ),
                 ),

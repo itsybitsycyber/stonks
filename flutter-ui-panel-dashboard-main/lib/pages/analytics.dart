@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 import 'charts.dart';
+import './drawer/drawer_page.dart';
 import 'package:admin_panel_responsive_flutter/responsive_layout.dart';
 import 'package:admin_panel_responsive_flutter/pages/drawer/drawer_page.dart';
 
